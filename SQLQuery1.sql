@@ -8,7 +8,8 @@ ID int Primary key,
 Name Nvarchar(50),
 Age INT,
 Address Nvarchar(50)
-);
+)
+go 
 
 --Tạo bảng Course 
 
@@ -18,7 +19,8 @@ ID INt Primary key,
 Name Nvarchar(50),
 Description Text,
 Teacher Nvarchar(50)
-);
+)
+go
 
 
 CREATE TABLE Enrollments (
@@ -27,4 +29,5 @@ CREATE TABLE Enrollments (
     EnrollmentDate DATE,
     FOREIGN KEY (StudentID) REFERENCES Student(ID),
     FOREIGN KEY (CourseID) REFERENCES Courses(ID)
-);
+)
+go 
